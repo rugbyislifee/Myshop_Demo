@@ -10,14 +10,16 @@ namespace MyShop.Core.Models
 {
     public class Product {
 
-        [StringLength(20)]
         public string Id { get; set; }
         [DisplayName("Product Name")]
         public string Name { get; set; }
         public string Descritption { get; set; }
-        [Range(0,1000)]
+       
         public decimal Price { get; set; }
         public string Category { get; set; }
+        
+        [DisplayName("Image")]
+       
         public string Iamge { get; set; }
 
         public Product() {
